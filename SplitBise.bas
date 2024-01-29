@@ -33,7 +33,7 @@ Function getdiff(sPerson$, iNum&)
 	data	= oRange.getDataArray()
 	
 	for index = 1 To iNum
-		if (data(100)(index) = 1) then
+		if (data(0)(index) = data(index)(0)) and (data(0)(index) = sPerson) then
 			result = data(100)(index) - data(index)(100)
 		End if
 	next
